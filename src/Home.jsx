@@ -11,7 +11,7 @@ function Home() {
               </section>
 
               <section id="about" className="about">
-                  <h2>About Us</h2>
+                  <h2>Our Service</h2>
                   <p>We are a leading company with years of experience in delivering top-notch services to our clients. Our mission is to provide quality and value in everything we do.</p>
               </section>
 
