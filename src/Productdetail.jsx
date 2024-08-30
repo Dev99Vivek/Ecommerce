@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import './Productdetail.css';
 
-function ProductDetail({ products, handelCartItem }) {
+function ProductDetail({ products, handelCartItem, handelCartItems }) {
   const { id } = useParams();
   const findData = products.find((i) => i.id == id);
 
@@ -21,6 +21,7 @@ function ProductDetail({ products, handelCartItem }) {
         <p className="product-detail-price">Price: ${findData.price.toFixed(2)}</p>
         <p className="product-detail-description">{findData.description}</p>
         <button className="product-detail-button" onClick={() => handelCartItem(findData)}>Add to Cart</button>
+        <button className="product-detail-button" onClick={() => handelCartItems(findData)}>Add to Wishlist</button>
       </div>
     </div>
   );

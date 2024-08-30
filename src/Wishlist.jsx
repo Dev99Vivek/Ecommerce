@@ -13,15 +13,10 @@ function Wishlist({ cartItem, onRemove, onIncrease, onDecrease }) {
                         <div className="cart-item-details">
                             <h4>{item.title}</h4>
                             <p>Price: ${item.price.toFixed(2)}</p>
-                            <div className="quantity-control">
-                                <button onClick={() => onDecrease(item)}>-</button>
-                                <span>{item.quantity}</span>
-                                <button onClick={() => onIncrease(item)}>+</button>
-                            </div>
+                            <button className="remove-button" onClick={() => onRemove(item)}>
+                                Remove
+                            </button>
                         </div>
-                        <button className="remove-button" onClick={() => onRemove(item)}>
-                            Remove
-                        </button>
                     </div>
                 ))
             )}

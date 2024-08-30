@@ -6,7 +6,7 @@ function Header() {
     return (
         <div>
             <nav className="navbar">
-                <div className="logo">MyWebsite</div>
+                <div className="logo">Ecommerce</div>
                 <ul className="nav-links">
                     <Link to="/" className="nav-item">
                         <li>Home</li>
@@ -22,6 +22,9 @@ function Header() {
                     </Link>
                     <Link to="/Addtocart" className="nav-item">
                         <li>Add to cart</li>
+                    </Link>
+                    <Link to="/Wishlist" className="nav-item">
+                        <li>Wishlist</li>
                     </Link>
                 </ul>
                 <div className="hamburger">
