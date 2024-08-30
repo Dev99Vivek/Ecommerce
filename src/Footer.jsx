@@ -37,6 +37,7 @@ function Footer() {
 
               <div class="footer-bottom">
                   &copy; 2024 MyWebsite | All Rights Reserved
+                 | Made by Vivek
               </div>
           </footer>
 
